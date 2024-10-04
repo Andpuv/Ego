@@ -177,12 +177,6 @@ int main ( int c_unused(argc), char ** c_unused(argv) )
         "error: ego_version_from_string() failed (expected: match)." C_NL
       );
 
-      /* /discard/ */ fprintf(stderr,
-        "%s vs %s" C_NL,
-        ego_version_to_string(version),
-        ego_version_to_string(&deadbeef)
-      );
-
       result = FAILED;
       goto deconstruct;
     }
@@ -302,8 +296,6 @@ int main ( int c_unused(argc), char ** c_unused(argv) )
       /* /discard/ */ fprintf(stderr,
         "error: ego_version_to_string() failed (expected: match)." C_NL
       );
-
-      printf("%s vs %s\n", string, "222.173.190A47");
 
       result = FAILED;
       goto deconstruct;

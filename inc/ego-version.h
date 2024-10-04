@@ -256,7 +256,7 @@ bool_t ego_version_from_number (
  *                {major} is stored from bit 24 to 31 (8-bit);                 *
  *                {minor} is stored from bit 16 to 23 (8-bit);                 *
  *                {patch} is stored from bit  8 to 15 (8-bit);                 *
- *                {color} is stored from bit  6 to  7 (4-bit);                 *
+ *                {color} is stored from bit  6 to  7 (2-bit);                 *
  *                {level} is stored from bit  0 to  5 (6-bit).                 *
  *                                                                             *
  * --------------------------------------------------------------------------- *
