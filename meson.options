@@ -1,0 +1,1 @@
+option('color', type: 'combo', choices: ['red', 'green', 'blue', 'gray'], value: 'red', description: 'Color used to build the framework')
