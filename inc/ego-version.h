@@ -406,11 +406,27 @@ bool_t ego_version_is_greater_than (
  * --------------------------------------------------------------------------- *
  */
 
-#   define __EGO_VERSION_MAJOR__ 0
-#   define __EGO_VERSION_MINOR__ 0
-#   define __EGO_VERSION_PATCH__ 1
-#   define __EGO_VERSION_COLOR__ EGO_VERSION_COLOR_GRAY
-#   define __EGO_VERSION_LEVEL__ 0
+#   include "config-ego-version.h"
+
+#   if !defined(__EGO_VERSION_MAJOR__)
+#     define __EGO_VERSION_MAJOR__ 0
+#   endif
+
+#   if !defined(__EGO_VERSION_MINOR__)
+#     define __EGO_VERSION_MINOR__ 0
+#   endif
+
+#   if !defined(__EGO_VERSION_PATCH__)
+#     define __EGO_VERSION_PATCH__ 1
+#   endif
+
+#   if !defined(__EGO_VERSION_COLOR__)
+#     define __EGO_VERSION_COLOR__ EGO_VERSION_COLOR_RED
+#   endif
+
+#   if !defined(__EGO_VERSION_LEVEL__)
+#     define __EGO_VERSION_LEVEL__ 0
+#   endif
 
 #   define __EGO_VERSION_NUMBER__                                              \
   (                                                                            \

@@ -1,0 +1,12 @@
+/* Used as template for the Meson configuration utility. */
+
+# ifndef __CONFIG_EGO_VERSION_H__
+#   define __CONFIG_EGO_VERSION_H__
+
+#   define __EGO_VERSION_MAJOR__ @__FRAMEWORK_VERSION_MAJOR__@
+#   define __EGO_VERSION_MINOR__ @__FRAMEWORK_VERSION_MINOR__@
+#   define __EGO_VERSION_PATCH__ @__FRAMEWORK_VERSION_PATCH__@
+#   define __EGO_VERSION_COLOR__ @__FRAMEWORK_VERSION_COLOR__@
+#   define __EGO_VERSION_LEVEL__ @__FRAMEWORK_VERSION_LEVEL__@
+
+# endif /* __CONFIG_EGO_VERSION_H__ */
